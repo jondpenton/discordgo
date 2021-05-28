@@ -312,7 +312,7 @@ type ChannelEdit struct {
 	NSFW                 bool                   `json:"nsfw,omitempty"`
 	Position             int                    `json:"position"`
 	Bitrate              int                    `json:"bitrate,omitempty"`
-	UserLimit            int                    `json:"user_limit,omitempty"`
+	UserLimit            *int                   `json:"user_limit,omitempty"`
 	PermissionOverwrites []*PermissionOverwrite `json:"permission_overwrites,omitempty"`
 	ParentID             string                 `json:"parent_id,omitempty"`
 	RateLimitPerUser     int                    `json:"rate_limit_per_user,omitempty"`
